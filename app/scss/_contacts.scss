@@ -1,0 +1,104 @@
+.contacts{
+    &__inner{
+        display: flex;
+        padding-left: 25px;
+    }
+    &__info{
+        margin-right: 60px;
+        width: 240px;
+    }   
+    &__info-box{
+        margin-bottom: 30px;
+    }
+    &__info-title{
+        @extend%ubuntu-bold;
+        line-height: 24px;
+        margin: 0 0 13px;
+        font-size: 21px;
+    }
+    &__info-phone,
+    &__info-email{
+        line-height: 18px;
+        font-size: 15px;
+    }
+    &__info-email{
+        text-decoration: underline;
+    }
+    &__form{
+        margin-right: 106px;
+        width: 570px;
+
+    }
+    &__form-title{
+        @extend%ubuntu-bold;
+        line-height: 24px;
+        margin: 0 0 13px;
+        font-size: 21px;
+    }
+    &__form-text{
+        line-height: 18px;
+        margin: 0 0 12px;
+        font-size: 15px;
+    }
+    &__form-line{
+        justify-content: space-between;
+        margin-bottom: 10px;
+        display: flex;
+    }
+    &__form-input,
+    &__form-textarea{
+        background: rgba(0, 0, 0, 0.5);
+        @extend%ubuntu-regular;
+        line-height: 15px;
+        font-size: 13px;
+        font-size: 13px;
+        color: #fff;
+        padding: 15px;
+        border: none;
+        &::placeholder{
+            color: rgba(#fff, .4);
+        }
+    }
+
+    &__form-input{
+        width: 49%;
+    }
+    &__form-textarea{
+        margin-bottom: 20px;
+        min-height: 144px;
+        resize: none;
+        width: 100%;
+    }
+    &__form-btn{
+        background-color: transparent;
+        text-transform: uppercase;
+        border: 1px solid #fff;
+        letter-spacing: 0.03em;
+        transition: all .3s;
+        @extend%ubuntu-bold;
+        border-radius: 2px;
+        line-height: 16px;
+        padding: 9px 15px;
+        font-size: 14px;
+        cursor: pointer;
+        color: #fff;
+        &:hover{
+            background-color: #fff;
+            color: black;
+        }
+    }
+    &__social-list{
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+    }
+    &__social-item{
+        margin: 14px 0;
+    }
+    &__social-link{
+        opacity: 0.5;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
