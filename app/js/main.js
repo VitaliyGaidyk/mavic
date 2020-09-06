@@ -12,10 +12,10 @@ $(function () {
 
     });
 
-    // $('#fullpage').fullpage({
-    //     autoScrolling: true,
-    //     scrollHorizontally: true,
-    //     sectionSelector: '.page-section'
-    // });
+    let btn = $('.btn');
 
+    btn.on('click', function () {
+        $(this).toggleClass('active');
+        $(this).toggleClass('not-active');
+    });
 });
