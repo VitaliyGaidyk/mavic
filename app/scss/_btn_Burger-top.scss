@@ -6,13 +6,14 @@ green: #3FAF82
 .box {
     border-radius: 2px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    height: 400px;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // width: 400px;
+    // height: 400px;
     background: inherit;
     box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .btn {
@@ -20,7 +21,7 @@ green: #3FAF82
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80px;
+    width: 50px;
     cursor: pointer;
 }
 
@@ -61,6 +62,8 @@ span+span {
 
 .not-active span:nth-child(3) {
     animation: ease .7s bottom-2 forwards;
+    width: 35px;
+    margin-left: auto;
 }
 
 @keyframes top {

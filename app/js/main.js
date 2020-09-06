@@ -12,10 +12,20 @@ $(function () {
 
     });
 
+    $('#fullpage').fullpage({
+        autoScrolling: true,
+        scrollHorizontally: true,
+        sectionSelector: '.page-section',
+        scrollOverflow: true,
+        anchors: ['top', 'products', 'benefits', 'specification', 'questions', 'contacts'],
+        menu: '#header__nav'
+    });
+
     let btn = $('.btn');
 
     btn.on('click', function () {
         $(this).toggleClass('active');
         $(this).toggleClass('not-active');
     });
+
 });

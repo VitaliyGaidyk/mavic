@@ -1,31 +1,37 @@
-*,*::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
+
 ul,
-li{
+li {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     font-size: inherit;
     margin: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
-body{
+
+body {
     @extend%ubuntu-light;
     position: relative;
     overflow-x: hidden;
@@ -34,44 +40,51 @@ body{
     font-size: 17px;
     color: #fff;
     margin: 0;
+
 }
 
-%ubuntu-light{
+%ubuntu-light {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
 }
-%ubuntu-medium{
+
+%ubuntu-medium {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
 }
-%ubuntu-regular{
+
+%ubuntu-regular {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
 }
-%ubuntu-bold{
+
+%ubuntu-bold {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
 }
-%sf-regular{
+
+%sf-regular {
     font-family: 'SFProDisplay-Light', sans-serif;
     font-weight: 400;
 }
-%sf-semibold{
+
+%sf-semibold {
     font-family: 'SFProDisplay-Semibold', sans-serif;
     font-weight: 600;
 }
 
-.page-section{
+.page-section {
     background-image: url('../images/page-bg.jpg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     z-index: 1;
-    &::before{
+
+    &::before {
         background: linear-gradient(107.54deg,
-        rgba(23, 26, 28, 0.72) 0%,
-        #5E5E57 100%);
+                rgba(23, 26, 28, 0.72) 0%,
+                #5E5E57 100%);
         position: absolute;
         opacity: 0.15;
         content: '';
@@ -80,19 +93,27 @@ body{
         left: 0;
         top: 0;
     }
-    &__wrapper{
-        padding: 74px 0 50px;
+
+    &__wrapper {
+        padding: 10px 0 20px;
         position: relative;
         min-height: 100vh;
         z-index: 1;
+
+    }
+
+    .top__inner img {
+        width: 51%;
     }
 }
-.container{
+
+.container {
     max-width: 1270px;
     padding: 0 15px;
     margin: 0 auto;
 }
-.scroll__btn{
+
+.scroll__btn {
     padding: 13px 0 5px;
     position: absolute;
     text-align: center;
@@ -100,20 +121,23 @@ body{
     right: 0;
     left: 0;
 }
-.title{
+
+.title {
     margin-bottom: 55px;
     @extend%sf-regular;
     padding-top: 70px;
     line-height: 53px;
     font-size: 44px;
 }
-.header{
+
+.header {
     position: fixed;
     z-index: 10;
     top: 30px;
     right: 0;
     left: 0;
-    &__inner{
+
+    &__inner {
         justify-content: space-between;
         text-transform: uppercase;
         @extend%ubuntu-medium;
@@ -123,7 +147,8 @@ body{
         font-size: 15px;
         display: flex;
     }
-    &__btn{
+
+    &__btn {
         background-color: transparent;
         text-transform: uppercase;
         border: 1px solid #fff;
@@ -133,16 +158,17 @@ body{
         margin-right: 8;
         cursor: pointer;
         color: #fff;
-        &:hover{
+
+        &:hover {
             background-color: #fff;
             color: #000000;
         }
     }
-    &__phone{
+
+    &__phone {
         font-family: 'Ubuntu', sans-serif;
         line-height: 18px;
         font-weight: 700;
         font-size: 16px;
     }
 }
-
