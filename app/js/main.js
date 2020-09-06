@@ -26,6 +26,12 @@ $(function () {
     btn.on('click', function () {
         $(this).toggleClass('active');
         $(this).toggleClass('not-active');
+        $('.menu__list').toggleClass('active');
     });
+    $('.menu__list-link').on('click', function () {
+        $('.btn').toggleClass('active');
+        $('.btn').toggleClass('not-active');
+    });
+
 
 });
